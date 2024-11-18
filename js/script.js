@@ -5,7 +5,7 @@ const projectsData = [
         description : 'Freshall is my current group project for the 5th semester in my Web Programming class. This project involves creating a web application using the Laravel framework. The main feature of the application is that it serves as an online store, allowing the admin to post products and users to purchase them.',
         code        : 'https://github.com/freshall-id',
         prototype   : '',
-        imageUrl    : './assets/Freshall.png'
+        imageUrl    : './assets/Projects/Freshall.png'
     },
     {
         title       : 'Meja Belajar',
@@ -13,7 +13,7 @@ const projectsData = [
         description : 'Meja Belajar was a semester-long group project for my Software Engineering class. Its primary feature is connecting mentors and mentees, both university students, to help mentees navigate academic challenges with the guidance of mentors. I personally worked on the back-end features on the helpers sections.',
         code        : 'https://github.com/Meja-Belajar',
         prototype   : 'https://www.figma.com/design/EGZae4cmDVWzi1CVvavIgR/Meja-Belajar-%7C-System-UI-UX?node-id=0-1&t=n5IRbHJS2GzyhKaW-1',
-        imageUrl    : './assets/MejaBelajar.png'
+        imageUrl    : './assets/Projects/MejaBelajar.png'
     },
     {
         title       : 'Bersihkan',
@@ -21,7 +21,7 @@ const projectsData = [
         description : 'Bersihkan was a group project developed for my Human-Computer Interaction class. The project aimed to promote recycling by exchanging recycled trash for points, which could be redeemed for rewards. My personal contributions included creating the prototype and the HTML for the homepage.',
         code        : 'https://github.com/ricotandrio/bersihkan.app',
         prototype   : 'https://www.figma.com/design/9VesRpEUFjNbK3n71Ne7fz/Bersihkan_Prototype?node-id=0-1&t=nZ8jBr0NRpqVcBBW-1',
-        imageUrl    : './assets/Bersihkan.png'
+        imageUrl    : './assets/Projects/Bersihkan.png'
     },
     {
         title       : 'Online Shopping - Java CLI Application',
@@ -29,7 +29,7 @@ const projectsData = [
         description : 'A CLI Application built using Java. The application is an Online Shopping Platform using OOP concepts I learned over the semester. Through this assignment I learned a lot about OOP concepts more in-depth.',
         code        : 'https://github.com/Voyaze/JavaCLIAssignment.git',
         prototype   : '',
-        imageUrl    : './assets/JavaCLIApplication.png'
+        imageUrl    : './assets/Projects/JavaCLIApplication.png'
     },
     {
         title       : 'JCC - Jakarta Conference Center',
@@ -37,7 +37,7 @@ const projectsData = [
         description : 'My final project for my Human Computer Interaction Class\'s Lab and my first full developed static website. I learned a lot of HTML, CSS, and Javascript through this final project since everything was needed to be made from scratch.',
         code        : 'https://github.com/Voyaze/JCC.git',
         prototype   : 'https://www.figma.com/design/eZkmwry78qTqixVmK4cnoV/HCI?node-id=0-1&t=VQtnOaNAr8GBWfNV-1',
-        imageUrl    : './assets/JCC.png'
+        imageUrl    : './assets/Projects/JCC.png'
     }
 
 ];
