@@ -70,7 +70,7 @@ const postProjects = () => {
         }
 
         projectContainer.innerHTML += `
-            <div class="d-flex mb-4 custom-text">
+            <div class="d-flex custom-text" style ="margin-bottom:8vw;">
                 <div class="col-6 d-flex justify-content-center align-items-center">
                     <img class ="rounded porto-image"src="${data.imageUrl}" alt="${data.title}" style="object-fit: cover;">
                 </div>
