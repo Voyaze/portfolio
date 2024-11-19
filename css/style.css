@@ -1,6 +1,39 @@
 .bg-customColor1{
-    background-color:#151617
+    background-color:#0F0F0F
 }
+/* 0F0F0F
+1A1A1D */
 .projectParagraph{
     font-size: 1vw;
 }
+
+.icons{
+    width: 80px;
+    height: auto;
+}
+
+.porto-image{
+    width: 30vw;
+    height: auto;
+}
+
+.soft-skill{
+    display: inline-block;
+    display: inline-block;
+    font-family: Geist Mono;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #ffc107;
+}
+
+.custom-text{
+    font-family: Geist Mono;
+}
+
+.pill-color{
+    background-color: #6f42c1;
+}
+
+/* h1{
+    font-size: 60px;
+} */

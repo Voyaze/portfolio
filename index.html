@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
     <div class="container">
       <a class="navbar-brand ms-2 fw-bold" href="#">Marcello.dev</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -24,34 +31,57 @@
       </div>
     </div>
   </nav>
-  
+
 
   <div class="row bg-customColor1 m-0" style="width: 100%;">
     <div class="col-2">
     </div>
-  
+
     <div class="col-8 text-light m-0">
-      <div class="row d-flex justify-content-around mt-5 pb-4 border-1 border-bottom align-items-center" id="AboutMe" >
-        <div class="col-4 d-flex justify-content-center ratio ratio-1x1" style="max-width: 15vw; height:15vw;"">
-          <img src="./assets/ProfilePictureSquare.JPG" class="rounded-circle img-fluid" alt="Profile Picture">
+
+      <div class="row d-flex justify-content-center align-items-center" style="padding-top: 5vw;" id="AboutMe">
+        <div class="col-4 d-flex justify-content-center ratio ratio-1x1 m-3" style="max-width: 300px; height:300px;">
+          <img src=" ./assets/ProfilePictureSquare.JPG" class="rounded rounded-5 img-fluid" alt="Profile Picture">
         </div>
-        <div class="col-8 text-light">
+        <div class="col-8 text-light" style="font-family: Geist Mono;">
           <div class="row">
             <h2>Hello my name is Marcello Arvel Sudarta,</h2>
             <h5 class="pb-2">Computer Science Undergraduate at BINUS University</h3>
-            <p>
-              I am currently seeking opportunities to build a strong skill set and portfolio for the future. With over 1.5 years of experience working in my university's organization, I have honed my leadership and communication skills. Academically, I am excelling with a 3.96 GPA as of my fourth semester.
-            </p>
+              <p>
+                I am currently seeking opportunities to build a strong skill set and portfolio for the future. With over
+                1.5 years of experience working in my university's organization, I have honed my leadership and
+                communication skills. Academically, I am excelling with a 3.96 GPA as of my fourth semester.
+              </p>
           </div>
           <div class="col-12 justify-content-start align-items-center d-flex mb-2" style="gap:20px;">
             <div>
-              <a href="./assets/FPK_Marcello Arvel Sudarta.pdf" target="_blank">
-                <button type="button" class="btn btn-primary rounded-pill">View My CV</button>
+              <a href="./assets/CV_Marcello Arvel Sudarta.pdf" target="_blank" style="text-decoration: none;">
+                <button type="button" class="btn btn-danger rounded-pill d-flex align-items-center">
+                  <div class="d-flex align-items-center me-2">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-5-4v4h4V3h-4Z" />
+                    </svg>
+
+                  </div>
+                  <div>
+                    See my CV
+                  </div>
+                </button>
               </a>
             </div>
             <div>
-              <a href="https://github.com/Voyaze" target="_blank">
-                <button type="button" class="btn btn-dark rounded-pill">Github Profile</button>
+              <a href="https://github.com/Voyaze" target="_blank" style="text-decoration: none;">
+                <button type="button" class="btn btn-light rounded-pill d-flex align-items-center">
+                  <div class="d-flex align-items-center me-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                      class="align-" style="width: 20px;" />
+                  </div>
+                  <div>
+                    Github Profile
+                  </div>
+                </button>
               </a>
             </div>
           </div>
@@ -59,59 +89,65 @@
 
       </div>
 
-      <div class="row text-center justify-content-evenly" id="Skills">
-            <h1 class="text-center mb-3">Skills</h1>
-            <div class="col-4">
-              <h2 class="pb-2">Hard Skills</h2>
-              <div class="row d-flex justify-content-center hard-skills"> 
+      <div class=" row text-center justify-content-between" id="Skills" style="padding-top:5vw;">
+        <h1 class="text-center" style="padding-bottom: 2vw;">Skills</h1>
 
-              </div>
-              
-            </div>
-            <div class="col-4">
-              <h2 class="pb-2">Soft Skills</h2>
-              <div class="row p-0 m-0">
-                <ul class="p-0 m-0 list-unstyled fs-5">
-                  <li>Profficient in English</li>
-                  <li>Profficient in Bahasa Indonesia</li>
-                  <li>Leadership Experience</li>
-                  <li>Adaptibility</li>
-                  <li>Problem Solver</li>
-                </ul>
+        <div>
+
+        </div>
+        <div class="col-5">
+          <h2 class="pb-2">Hard Skills</h2>
+          <div class="row d-flex justify-content-evenly hard-skills">
+          </div>
+        </div>
+
+        <div class="col-5">
+          <h2 class="pb-2">Soft Skills</h2>
+          <div>
+            <div class="row">
+              <div class="mb-2 align-items-start p-3 soft-skills">
               </div>
             </div>
+          </div>
+        </div>
       </div>
 
-    <div class="row mt-3" id ="Project">
+      <div class="row" id="Project" style="padding-top: 5vw;padding-bottom: 5vw;">
+        <div class="col-12 text-center" style="margin-bottom: 2vw;">
+          <h1 class="text-center">Projects</h1>
+        </div>
 
-      <div class ="col-12 text-center">
-        <h1 class="text-center">Projects</h1>
+        <div class="projects row d-flex flex-column">
+
+        </div>
       </div>
 
-      <div class ="projects row d-flex flex-column">
-
+      <div class="col-2">
       </div>
+
     </div>
- 
-    <div class="col-2">
-    </div>
-  
-  </div>
 
-
-  
-
-    
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
-<footer style="width: 100%; background-color: black; padding: 10px 0;" class="mt-5  ">
-  <div class="container-fluid d-flex justify-content-center align-items-center">
-    <p class="text-light text-center m-0">
-      Built using basic HTML, CSS, JS, and Bootstrap
-    </p>
+<footer style="width: 100%; background-color: black; padding: 10px 0; height: 6vw;"
+  class="mt-5 d-flex align-items-center">
+  <div class="container-fluid d-flex justify-content-center align-items-center text-light">
+    <div>
+      <a href="https://www.linkedin.com/in/arvel-sudarta/" target="_blank" style="text-decoration: none;">
+        <button type="button" class="btn btn-light rounded-pill d-flex align-items-center pe-4 ps-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+            style="width: 40px;margin-right: 10px;" />
+
+          <div>
+            Link with me!
+          </div>
+        </button>
+      </a>
+    </div>
   </div>
+
 </footer>
 
 </html>

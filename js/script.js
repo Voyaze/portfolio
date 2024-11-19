@@ -9,7 +9,7 @@ const projectsData = [
     },
     {
         title       : 'Meja Belajar',
-        programs    : ['HTML', 'CSS', 'Javascript', 'Go', 'PostgreSQL', 'Figma'],
+        programs    : ['Go', 'PostgreSQL', 'Figma'],
         description : 'Meja Belajar was a semester-long group project for my Software Engineering class. Its primary feature is connecting mentors and mentees, both university students, to help mentees navigate academic challenges with the guidance of mentors. I personally worked on the back-end features on the helpers sections.',
         code        : 'https://github.com/Meja-Belajar',
         prototype   : 'https://www.figma.com/design/EGZae4cmDVWzi1CVvavIgR/Meja-Belajar-%7C-System-UI-UX?node-id=0-1&t=n5IRbHJS2GzyhKaW-1',
@@ -24,7 +24,7 @@ const projectsData = [
         imageUrl    : './assets/Projects/Bersihkan.png'
     },
     {
-        title       : 'Online Shopping - Java CLI Application',
+        title       : 'Online Shopping CLI',
         programs    : ['Java'],
         description : 'A CLI Application built using Java. The application is an Online Shopping Platform using OOP concepts I learned over the semester. Through this assignment I learned a lot about OOP concepts more in-depth.',
         code        : 'https://github.com/Voyaze/JavaCLIAssignment.git',
@@ -32,8 +32,8 @@ const projectsData = [
         imageUrl    : './assets/Projects/JavaCLIApplication.png'
     },
     {
-        title       : 'JCC - Jakarta Conference Center',
-        programs    : ['HTML','CSS','Javascript'],
+        title       : 'Jakarta Conference Center',
+        programs    : ['HTML','CSS','Javascript','Figma'],
         description : 'My final project for my Human Computer Interaction Class\'s Lab and my first full developed static website. I learned a lot of HTML, CSS, and Javascript through this final project since everything was needed to be made from scratch.',
         code        : 'https://github.com/Voyaze/JCC.git',
         prototype   : 'https://www.figma.com/design/eZkmwry78qTqixVmK4cnoV/HCI?node-id=0-1&t=VQtnOaNAr8GBWfNV-1',
@@ -48,7 +48,7 @@ const postProjects = () => {
     projectsData.map((data) => {
         // Generate technology badges dynamically
         const badges = data.programs.map(program => `
-            <span class="badge rounded-pill text-white bg-primary">${program}</span>
+            <span class="badge rounded-pill text-white pe-3 ps-3 pill-color">${program}</span>
         `).join(' ');
         
         let prototypeButton = ''
@@ -70,29 +70,29 @@ const postProjects = () => {
         }
 
         projectContainer.innerHTML += `
-            <div class="d-flex mt-4 mb-4">
+            <div class="d-flex mb-4 custom-text">
                 <div class="col-6 d-flex justify-content-center align-items-center">
-                    <img src="${data.imageUrl}" alt="${data.title}" style="object-fit: cover; width: 30vw; height: auto;">
+                    <img class ="rounded porto-image"src="${data.imageUrl}" alt="${data.title}" style="object-fit: cover;">
                 </div>
 
-                <div class="col-6 d-flex flex-column p-2 border border-3 rounded-3 text-center justify-content-between projectParagraph">
+                <div class="col-6 d-flex flex-column ps-4 text-center justify-content-between projectParagraph">
                     <div>
                         <div class="col-12 border-bottom border-1">
                             <h1>${data.title}</h1>
-                            <div class="pb-2">
+                            <div class="mb-3">
                                 ${badges}
                             </div>
                         </div>
-                        <div class="col-12 pt-3 text-start p-3" style="height:12vw;">
+                        <div class="col-12 pt-3 text-justify p-3" style="height:12vw;">
                             <p>${data.description}</p>
                         </div>
                     </div>
 
-
-                    <div class="col-12 justify-content-end align-items-center d-flex mb-2" style="gap:20px;">
+                    
+                    <div class="col-12 justify-content-center align-items-center d-flex mb-2" style="gap:20px;">
                         ${prototypeButton}
                         <div>
-                            <a href="https://github.com/ricotandrio/bersihkan.app" target="_blank">
+                            <a href="${data.code}" target="_blank">
                                 <button type="button" class="btn btn-primary btn-md">View Code</button>
                             </a>
                         </div>
@@ -147,8 +147,41 @@ const postHardSkills = () =>{
     hardSkillsData.map((data)=>{
     hardSkillsContainer.innerHTML += 
         `
-        <img class="p-2" style="width: 4vw;height: auto;" src="${data.image}"/>
+        <img class="icons p-2" src="${data.image}"/>
     `})
 }
 
 postHardSkills()
+
+const softSkillsData = [
+    {
+        text: 'English Proficiency'
+    },
+    {
+        text: 'Leadership'
+        
+    },
+    {
+        text: 'Indonesian Proficiency'
+    },
+    {
+        text: 'Adaptability'
+    },
+    {
+        text: 'Problem-Solving'
+    }
+];
+
+const softSkillsContainer = document.querySelector('.soft-skills');
+
+const postSoftSkills = () =>{
+    softSkillsData.map((data)=>{
+    softSkillsContainer.innerHTML += 
+        `
+        <div class=" p-2 rounded text-dark soft-skill">
+            <h5 class="m-0 p-0">${data.text}</h5>
+        </div>
+    `})
+}
+
+postSoftSkills()
