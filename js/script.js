@@ -63,9 +63,7 @@ const postProjects = () => {
         }
         else{
             prototypeButton = `
-            <div>
-            <button type="button" class="btn btn-primary btn-md" disabled>View Prototype</button>
-            </div>
+
             `
         }
 
